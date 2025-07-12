@@ -1,6 +1,6 @@
 # Order Placement Application
 
-A simple **Spring Boot** application simulating order placement for an e-commerce platform with the following business flow:
+A simple Spring Boot application simulating order placement for an e-commerce platform with the following business flow:
 
 ## Features:
 - Validate product stock
@@ -18,7 +18,6 @@ Build Tool:-  Maven
 
 ## Project Structure
 
-```
 src/
 └── main/
     └── java/com/order/
@@ -29,19 +28,16 @@ src/
         ├── repository/     → Interfaces to interact with the database
         ├── exception/      → Custom exception classes
         └── mock/           → Simulated inventory and payment services
-```
+
 
 ##How to Run
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/order-placement-app.git
-   cd order-placement-app
-   ```
+   git clone https://github.com/vaibhavambule/order_placement_obvs.git
+   
+3. Import and Run the app:
 
-2. Run the app:
-
-3. Test the API with a tool like Postman.
+4. Test the API with a tool like Postman.
 
 ## Sample API Request
 
@@ -51,16 +47,16 @@ POST /api/orders
 ```
 
 ### Request JSON Body:
-```json
+
 {
   "productId": 1,
   "quantity": 2
 }
-```
+
 
 ### Possible Responses:
 - Order placed:  
-  ```json
+  
   {
     "id": 1,
     "productId": 1,
@@ -68,9 +64,9 @@ POST /api/orders
     "totalAmount": 100000.0,
     "status": "SUCCESS"
   }
-  ```
+  
 
-- Out of stock: `"Product is out of stock."`
+- Out of stock: "Product is out of stock."
 
-- Payment failed: `"Payment failed."`
+- Payment failed: "Payment failed."
 
