@@ -18,16 +18,21 @@ Build Tool:-  Maven
 
 ## Project Structure
 
-src/
-└── main/
-    └── java/com/order/
-        ├── controller/     → Handles API requests
-        ├── service/        → Contains business logic
-        ├── model/          → Defines data classes like Order and Product
-        ├── dto/            → Request/response data objects
-        ├── repository/     → Interfaces to interact with the database
-        ├── exception/      → Custom exception classes
-        └── mock/           → Simulated inventory and payment services
+Folder Structure (Simple Format):
+
+-- src/main/java/com/order/controller – Handles API requests (e.g., REST controllers)
+
+-- src/main/java/com/order/service – Contains business logic
+
+-- src/main/java/com/order/model – Data classes like Order, Product, etc.
+
+-- src/main/java/com/order/dto – DTOs for requests/responses
+
+-- src/main/java/com/order/repository – Interfaces for database operations (e.g., JPA repositories)
+
+-- src/main/java/com/order/exception – Custom exception classes
+
+-- src/main/java/com/order/mock – Simulated services (like mock inventory/payment)
 
 
 ##How to Run
