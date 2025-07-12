@@ -65,7 +65,7 @@ POST /api/orders
   "quantity": 2000000
 }
 
-3. For Payment failed (Quantity to high)
+3. For Payment failed
    ```
    Product price: 50000
    3 × 50000 = 150000  (exceeds 100000)
