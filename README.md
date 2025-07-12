@@ -53,10 +53,30 @@ POST /api/orders
 
 ### Request JSON Body:
 
+1. For successful order
 {
   "productId": 1,
   "quantity": 2
 }
+
+2. For out of stock (Quantity to high)
+{
+  "productId": 1,
+  "quantity": 2000000
+}
+
+3. For Payment failed (Quantity to high)
+   ```
+   Product price: 50000
+   3 × 50000 = 150000  (exceeds 100000)
+   Mocked PaymentService returns false, simulating a failed transaction
+   ```
+
+{
+  "productId": 1,
+  "quantity": 3
+}
+
 
 
 ### Possible Responses:
